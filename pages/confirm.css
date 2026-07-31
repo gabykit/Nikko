@@ -144,6 +144,22 @@ header {
     font-size: 1.2em;
     margin-bottom: 35px;
 }
+/* Bouton  */
+.btn-primary{
+    text-decoration: none; 
+    font-size: 14px;
+    background-color: #355971;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600; 
+    border: 2px solid #365971;
+    text-transform:uppercase; 
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* --- FOOTER --- */
 footer{
