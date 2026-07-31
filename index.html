@@ -172,6 +172,9 @@
                         <!-- Redirection après envoi (Optionnel) -->
                         <input type="hidden" name="redirect" value="https://votre-site.com/merci.html">
 
+                        <!-- Champ Honeypot : Masqué aux humains via CSS -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                         <input type="text" name="name" placeholder="Nom (Prenom & Nom)" required>
                         <input type="email" name="email" placeholder="E-mail professionnel" required>
                         <input type="text" name="sujet" placeholder="Sujet de votre demande " required>
