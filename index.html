@@ -169,6 +169,9 @@
                     <h3>Envoyez-nous un message</h3>
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="123200fc-d526-494a-8a81-b0dbbecd3354">
+                        <!-- Redirection après envoi (Optionnel) -->
+                        <input type="hidden" name="redirect" value="https://votre-site.com/merci.html">
+
                         <input type="text" name="name" placeholder="Nom (Prenom & Nom)" required>
                         <input type="email" name="email" placeholder="E-mail professionnel" required>
                         <input type="text" name="sujet" placeholder="Sujet de votre demande " required>
