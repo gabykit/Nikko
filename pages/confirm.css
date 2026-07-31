@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #f9f9f9; 
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 150px;
+}
+
+/*--------   Style du Header-content   ----------*/
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* div logo */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo img{
+    height: 70px;
+    vertical-align: middle;
+}
+.logo h2{
+    color: #365971;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navigations liens */
+.navigation .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.nav-list li{
+    border: none;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+}
+.nav-list li:hover{
+    border-bottom: 5px solid #3a97a37f;
+    padding: 10px 0;
+}
+.nav-list li a{
+    color: #282828;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+.nav-list li a:hover{
+    background-color: #3a97a37f;
+    color: #181818;
+    text-decoration: none;
+    border-radius:10px ;
+}
+.btn{
+    text-decoration: none;
+    font-size: 18px;
+    background-color:#365971;
+    border: 1px solid rgb(59, 94, 125);
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 rgb(46, 74, 99);;
+}
+.btn:hover{
+    border: 1px solid rgb(59, 94, 125);
+    transform: translateY(5px);
+    box-shadow: none;
+    background-color: #365971;
+}
+/*--------  Style de la page de confirmation (merci.html)  ----------*/
+.confirmation-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/bgd1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-height: calc(100vh - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.confirmation-box {
+    width: 60%;
+    max-width: 650px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation-box i {
+    font-size: 60px;
+    color: #2575BD;
+    margin-bottom: 20px;
+}
+
+.confirmation-box h2 {
+    color: #ECEFF1;
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.confirmation-box p {
+    color: #d7d6d6;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin-bottom: 35px;
+}
+
+/* --- FOOTER --- */
+footer{
+    background-color: #282828;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 80px;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* div logo */
+.footer-container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-container .logo img{
+    height: 70px;
+    vertical-align: middle;
+}
+.footer-container .logo h2{
+    color: #365971;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navigations liens */
+.navigation-footer .navfoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.navigation-footer .navfoot li a i {
+    font-size: 25px;
+    color: #fff;
+    width: 40px; 
+    text-align: center;
+}
+
+.navigation-footer .navfoot li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+.navigation-footer .navfoot li a:hover{
+    color: #28a9babe;
+}
+
+/* Responsivité pour écran mobile */
+@media screen and (max-width: 768px) {
+    .confirmation-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    .confirmation-box h2 {
+        font-size: 1.8em;
+    }
+}
